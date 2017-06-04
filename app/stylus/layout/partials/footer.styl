@@ -1,0 +1,53 @@
+@import "../../utilities/vars"
+@import "../../utilities/mixins"
+
+/* FOOTER */
+footer
+  background $purple
+  padding 5px 0 20px
+  text-align center
+  //margin-top 10px
+  max-height 53px
+  a
+    color $white
+    svg
+      width 100%
+      max-width 80px
+      position relative
+      top 6px
+      g path
+        fill:$white
+
+    &:hover
+      color $white
+      opacity .8
+
+.footer-menu
+  margin 75px 0 150px
+  padding 0
+  display flex
+  justify-content space-between
+  li
+    list-style none
+    a
+      font-size 1.25em
+      color $purple
+      font-weight 700
+      &:hover
+        color $crimson
+        .fa
+          color $crimson
+        .fa-angle-left
+          transform translateX(-10px)
+        .fa-angle-right
+          transform translateX(10px)
+      .fa
+        font-size 32px
+        font-weight 900
+        position relative
+        top 3px
+        margin 0 10px
+        transitions()
+.forever-alone
+  justify-content space-around
+

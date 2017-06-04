@@ -1,0 +1,95 @@
+//- layouts/layout.pug
+extend layouts/_layout2.pug
+
+block title
+    | Staropramen - Креатив
+
+block content
+
+    section.without-background
+        .container
+            .row
+                .col-12
+                    img(src='img/slider2/slide2-1.png' alt='' title='')
+
+    section.without-background
+        .container
+            .row
+                .col-12
+                    img(src='img/slider2/slide2-2.png' alt='' title='')
+    section.without-background
+        .container
+            .row
+                .col-12
+                    img(src='img/slider2/slide2-3.png' alt='' title='')
+    section.without-background
+        .container
+            .row
+                .col-12
+                    img(src='img/slider2/slide2-4.png' alt='' title='')
+    section.without-background
+        .container
+            .row
+                .col-12
+                    .info
+                        img(src='img/slider2/slide2-5a.png' alt='' title='')
+                        .info-button.pulse
+                            i.fa.fa-info
+                        img(src='img/slider2/slide2-5b.png' alt='' title='' class='info-pop')
+    section.without-background
+        .container
+            .row
+                .col-12
+                    .info
+                        img(src='img/slider2/slide2-6a.png' alt='' title='')
+                        .slider-1.slider-2
+                            div.slide-1
+                                img(src='img/slider2/staropramen-gif2.gif' alt='' title='' class='gif-pic2')
+                            div.slide-1
+                                video(class='video-video' autoplay loop muted id='pramen')
+                                    source(src='img/slider2/staropramen-video.mp4' type='video/mp4')
+                            div.slide-1
+                                img(src='img/slider2/ss3.png' alt='' title='')
+    section.without-background
+        .container
+            .row
+                .col-12
+                    .info
+                        img(src='img/slider2/slide2-7a.png' alt='' title='')
+                        .slider-1.slider-2
+                            div.slide-1
+                                img(src='img/slider2/ss4.jpg' alt='' title='')
+                            div.slide-1
+                                img(src='img/slider2/ss1.png' alt='' title='')
+                            div.slide-1
+                                img(src='img/slider2/ss2.png' alt='' title='')
+
+    section.without-background
+        .container
+            .row
+                .col-12
+                    .info
+                        img(src='img/slider2/slide2-8.png' alt='' title='')
+                        img(src='img/slider2/staropramen-gif.gif' alt='' title='' class='gif-pic')
+    section.without-background
+        .container
+            .row
+                .col-12
+                    .info
+                        img(src='img/slider2/slide2-9.png' alt='' title='')
+                        a(href='//www.facebook.com/volta.agency/photos/a.1138010472926247.1073741828.1125905014136793/1469639556430002/?type=3&theater' title='' class='third-six pulse' target='_blank')
+                            img(src='img/slider2/360.png' alt='' title='')
+
+    section.without-background
+        .container
+            .row.justify-content-center
+                .col-8
+                    ul.footer-menu
+                        li
+                            a(href='index.html' title='')
+                                i.fa.fa-angle-left
+                                | Предыдущий раздел
+                        li
+                            a(href='tech.html' title='')
+                                | Следующий раздел
+                                i.fa.fa-angle-right

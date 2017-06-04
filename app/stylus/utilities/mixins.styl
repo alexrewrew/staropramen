@@ -1,0 +1,91 @@
+@import 'vars'
+//font styling
+font($size = false, $colour = false, $weight = false, $lh = false)
+  font-family: $main-font, sans-serif
+  if $size
+    font-size: $size
+  if $weight
+    font-weight: $weight
+  if $colour
+    color: $colour
+  if $lh
+    line-height: $lh
+
+//pseudoclass start
+pseudo($display, $position)
+  content: ''
+  display: $display
+  position: $position
+
+//transition
+transitions()
+  transition: all 0.4s ease
+
+//triangles in css
+triangle($colour, $direction, $size)
+  pseudo(block, absolute)
+  width: 0
+  height: 0
+  if $direction == down
+    border-left: $size solid transparent
+    border-right: $size solid transparent
+    border-top: $size solid $colour
+  else if $direction == up
+    border-left: $size solid transparent
+    border-right: $size solid transparent
+    border-bottom: $size solid $colour
+  else if $direction == right
+    border-top: $size solid transparent
+    border-bottom: $size solid transparent
+    border-left: $size solid $colour
+  else if $direction == left
+    border-top: $size solid transparent
+    border-bottom: $size solid transparent
+    border-right: $size solid $colour
+
+//placeholder styles
+placeholder()
+  &:-moz-placeholder
+    {block}
+  &::-moz-placeholder
+    {block}
+  &:-ms-input-placeholder
+    {block}
+  &::-webkit-input-placeholder
+    {block}
+
+//mediaquaries
+mobile()
+  @media (max-width: 767px)
+    {block}
+
+portrait()
+  @media (min-width: 768px) and (max-width: 991px)
+    {block}
+
+tablet()
+  @media (min-width: 992px) and (max-width: 1199px)
+    {block}
+
+displays()
+  @media (min-width: 1200px)
+    {block}
+
+//animations
+animations($name, $duration, $delay = false, $count = false, $function = false, $direction = false)
+  animation-name: $name
+  animation-duration: $duration
+  if $delay
+    animation-delay: $delay
+  if $count
+    animation-iteration-count: $count
+  if $function
+    animation-timing-function: $function
+  if $direction
+    animation-direction: $direction
+
+
+//keyframes
+keyframes($animationName)
+  @keyframes {$animationName}
+    {block}

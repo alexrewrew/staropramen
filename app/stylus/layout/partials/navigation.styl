@@ -1,0 +1,45 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+/* NAVIGATION */
+nav
+  background rgba(0,0,0,.4)
+  position fixed
+  top 0
+  left 0
+  right 0
+  max-height 70px
+  padding 10px 0
+  z-index 100
+  .menu
+    display flex
+    flex-direction row
+    margin 0
+    justify-content flex-end
+    padding 0
+    margin-top 5px
+    li
+      list-style none
+      a
+        font-size 1.125em
+        color $white
+        font-weight 900
+        padding 0 25px
+        &:hover
+          color $yellow
+      .active
+        color $yellow
+        cursor default
+        &:hover
+          color $yellow
+
+  .logo
+    svg
+      width 100%
+      max-width 100px
+      g path
+        fill $white
+      &:hover
+        g path
+          fill $purple
+          transitions()
